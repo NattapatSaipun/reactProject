@@ -10,6 +10,7 @@ const App = () => {
     <View style={stySheet.container}>
       <Text style={[stySheet.title]}>Hello React Native</Text>
       {/*<Logo/>*/}
+      <stySheet/>
     </View>
   )
 }
