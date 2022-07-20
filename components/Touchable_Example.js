@@ -3,7 +3,7 @@ import React from 'react'
 
 const Touchable_Example = () => {
     const onPress = (msg) => {
-        
+
         alert('Alert for' + msg)
     }
     return (
@@ -11,22 +11,32 @@ const Touchable_Example = () => {
             <View style={styles.container}>
                 <TouchableNativeFeedback
                     style={styles.button}
-                  onPress={() => onPress('TouchableNativeFeedback Press')}
-                  > 
-                        <Text>Touchable Native Feedback Only Android</Text>
+                    onPress={() => onPress('TouchableNativeFeedback Press')}
+                >
+                    <Text>Touchable Native Feedback Only Android</Text>
                 </TouchableNativeFeedback>
                 <TouchableHighlight
                     style={styles.button}
-                  onPress={() => onPress('TouchableHighlight Press')}
-                  > 
-                        <Text>Touchable Highlight Only Android</Text>
+                    onPress={() => onPress('TouchableHighlight Press')}
+                >
+                    <Text>Touchable Highlight Only Android</Text>
                 </TouchableHighlight>
                 <TouchableOpacity
                     style={styles.button}
-                  onPress={() => onPress('TouchableOpacity Press')}
-                  > 
-                        <Text>Touchable Opacity Only Android</Text>
+                    onPress={() => onPress('TouchableOpacity Press')}
+                >
+                    <Text>Touchable Opacity Only Android</Text>
                 </TouchableOpacity>
+                <TouchableWithoutFeedback
+                    style={styles.button}
+                    onPress={() => onPress('TouchableWithoutFeedbackPress')}
+                >
+                    <View style={styles.button}>
+                        <Text>Touchable Without Feedback Only Android</Text>
+                    </View>
+
+                </TouchableWithoutFeedback>
+
             </View>
         </SafeAreaView>
     )
