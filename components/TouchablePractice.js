@@ -20,7 +20,7 @@ const TouchablePractice = () => {
                 source={require('../assets/google-plus.png')}
                 style={styles.buttonImageIconStyle}/>
                 <View style={styles.buttonIconSeparatorStyle}></View>
-                <Text style={styles.buttonTextStyle}>Login Using Google Plus            </Text>
+                <Text style={styles.buttonTextStyle}>Login Using Google Plus</Text>
 
             </TouchableOpacity>
         </View>
@@ -47,6 +47,7 @@ const styles = StyleSheet.create({
         height: 40,
         borderRadius: 5,
         margin: 5,
+        width: 300
     },
     buttonFacebookStyle: {
         flexDirection: 'row',
@@ -57,6 +58,7 @@ const styles = StyleSheet.create({
         height: 40,
         borderRadius: 5,
         margin: 5,
+        width: 300
     },
     buttonImageIconStyle: {
         padding: 10,
